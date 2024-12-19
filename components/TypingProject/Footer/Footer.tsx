@@ -1,7 +1,7 @@
 import React from "react";
 import GithubIcon from "../../Icons/GithubIcon";
 import LinkedinIcon from "../../Icons/LinkedinIcon";
-import InstagramIcon from "../../Icons/InstagramIcon";
+import StackoverflowIcon from "../../Icons/StackoverflowIcon";
 import YoutubeIcon from "../../Icons/YoutubeIcon";
 type Props={href:string,Icon:React.FC<{className:string}>}
 const ClickableIcon = (props:Props) => {
@@ -30,8 +30,8 @@ export default function Fotter(props:{link:string,className:string}) {
             Icon={LinkedinIcon}
           />
           <ClickableIcon
-            href={"https://www.instagram.com/titof_abdo/"}
-            Icon={InstagramIcon}
+            href={"https://stackoverflow.com/users/11961514/sohaib"}
+            Icon={StackoverflowIcon}
           />
           <ClickableIcon
             href={"https://www.youtube.com/c/NTTFT"}

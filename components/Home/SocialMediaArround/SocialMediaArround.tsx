@@ -2,7 +2,7 @@ import React from "react";
 import { motion } from "../../../node_modules/framer-motion/dist/framer-motion";
 import GithubIcon from "../../Icons/GithubIcon";
 import LinkedinIcon from "../../Icons/LinkedinIcon";
-import InstagramIcon from "../../Icons/InstagramIcon";
+import StackoverflowIcon from "../../Icons/StackoverflowIcon";
 import YoutubeIcon from "../../Icons/YoutubeIcon";
 
 const IconClickableWithAnimation = props => {
@@ -36,7 +36,7 @@ export default function SocialMediaEmail(props: { finishedLoading: boolean }) {
             {/* Linkedin icon */}
             <IconClickableWithAnimation Icon={LinkedinIcon} href={"https://www.linkedin.com/in/sohaib-ashraf-butt-b36191192/"} />
             {/* Instagram Icon */}
-            {/* <IconClickableWithAnimation Icon={InstagramIcon} href={"https://www.instagram.com/xredme/"} /> */}
+            {/* <IconClickableWithAnimation Icon={StackoverflowIcon} href={"https://www.instagram.com/xredme/"} /> */}
             {/* Youtube Icon */}
             {/* <IconClickableWithAnimation Icon={YoutubeIcon} href={"https://www.youtube.com/@abdellatif_anaflous"} /> */}
           </div>

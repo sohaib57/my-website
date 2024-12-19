@@ -1,7 +1,7 @@
 import React from "react";
 import GithubIcon from "../Icons/GithubIcon";
 import LinkedinIcon from "../Icons/LinkedinIcon";
-import InstagramIcon from "../Icons/InstagramIcon";
+import StackoverflowIcon from "../Icons/StackoverflowIcon";
 import YoutubeIcon from "../Icons/YoutubeIcon";
 const ClickableIcon = props => {
   return (
@@ -13,7 +13,7 @@ const ClickableIcon = props => {
 const IconsData = [
   { href: "https://github.com/sohaib57", Icon: GithubIcon },
   { href: "https://www.linkedin.com/in/sohaib-ashraf-butt-b36191192/", Icon: LinkedinIcon },
-  { href: "https://www.instagram.com/titof_abdo/", Icon: InstagramIcon },
+  { href: "https://stackoverflow.com/users/11961514/sohaib", Icon: StackoverflowIcon },
   // { href: "https://www.youtube.com/@abdellatif_anaflous", Icon: YoutubeIcon },
 ];
 
