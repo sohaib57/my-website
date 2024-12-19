@@ -112,7 +112,7 @@ export default function Home() {
   const meta = {
     title: "Sohaib Ashraf - Software Engineer",
     description: `I've been working on Software development for 3 years straight. Get in touch with me to know more.`,
-    image: "/titofCercle.png",
+    image: "/Portfolio-portrait.jpg",
     type: "website",
   };
   const isProd = process.env.NODE_ENV === "production";
