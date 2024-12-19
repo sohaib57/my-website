@@ -65,12 +65,15 @@ export default function Home() {
     // this will only run if NEXT_PUBLIC_BLACKLIST_COUNTRIES is not empty
     if (!IsBlackListEmpty) {
       if (userData) {
-        // check if the user country is in the blackList
-        if (process.env.NEXT_PUBLIC_BLACKLIST_COUNTRIES.includes(userData.country)) {
-          // set isBlackListed to true
-          setIsBlackListed(true);
+        const blacklistCountries = process.env.NEXT_PUBLIC_BLACKLIST_COUNTRIES;
+        
+        if (blacklistCountries) {
+          const blacklistArray = blacklistCountries.split(',');
+          if (blacklistArray.includes(userData.country)) {
+            setIsBlackListed(true);
+          }
         }
-      }
+      }      
     }
   }, [IsBlackListEmpty, userData]);
 
@@ -107,8 +110,8 @@ export default function Home() {
 
   console.log("website is rendering...");
   const meta = {
-    title: "Abdellatif Anaflous - Software Engineer",
-    description: `I've been working on Software development for 5 years straight. Get in touch with me to know more.`,
+    title: "Sohaib Ashraf - Software Engineer",
+    description: `I've been working on Software development for 3 years straight. Get in touch with me to know more.`,
     image: "/titofCercle.png",
     type: "website",
   };
@@ -146,7 +149,7 @@ export default function Home() {
           {context.sharedState.finishedLoading ? <SomethingIveBuilt /> : <></>}
           {context.sharedState.finishedLoading ? <GetInTouch /> : <></>}
           {context.sharedState.finishedLoading ? (
-            <Footer githubUrl={"https://github.com/hktitof/my-website"} hideSocialsInDesktop={true} />
+            <Footer githubUrl={"https://github.com/sohaib57/my-website"} hideSocialsInDesktop={true} />
           ) : (
             <></>
           )}
